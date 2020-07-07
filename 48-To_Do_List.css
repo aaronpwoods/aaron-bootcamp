@@ -1,0 +1,67 @@
+ /* General Rule for CSS is to use the following code and modify as needed:
+        selector {
+        property: value;
+        }     */
+
+/* General stuff regarding backgrounds: 
+        if you don't want the image to be tiled, use the background-repeat propety
+        if you want to adjust size of the background, use the backgound-size property */
+
+/* General properties of borders are: 
+        width (in pixels)
+        color (rgb or hex)
+        style (solid, dashed)
+         */
+/* You can define one-off styles by defining an ID SELECTOR in the CSS and then
+referencing it using the id attribute to element in the HTML: 
+CSS --> #id_name
+            {
+                property: value;
+            } */
+            
+/* You can define global styles by defining an CLASS SELECTOR in the CSS and then
+referencing it using the class attribute to element in the HTML: 
+CSS --> .class_name
+            {
+                property: value;
+            } */
+
+/* Seems like better practice to use CLASS SELECTORS for defining CSS styles and
+limit the use of ID's in the HTML to identify elements for labeling and query strings. */
+
+h1{
+    color: #2b2b2b;
+    border: 2px solid red;
+    border-radius: 200px;
+    padding-left: 16px;
+}
+label{
+    border-width: 1px;
+    border-color: red;
+    border-style: solid;
+}
+/* Example of how to define a style for all divs */
+div{
+    background-color: white;
+}
+body{
+    background-color: coral;
+}
+/* Example of defining an ID SELECTOR */
+#strike {
+    text-decoration-line: line-through;
+}
+/* Example of defining a CLASS SELECTOR. In this case, all list items will have 
+a 2px solid red border, but any element that we add the .highlight class to will
+have a 4px solid blue border and a background color of gold.*/
+.highlight{
+background: gold;
+border: 4px solid blue;
+}
+
+/* I noticed that when I apply the .highlight class to an H1 heading in the 
+HTML that all of the base styles from the h1 selector are applied first, then
+the class will override anything that I put in the class definition. This is 
+why the border radius of 200px is still applied to the h1 headings even when I
+use the .highlight class. Because the highlight class does not specify anything
+for border radius it will use whatever was defined last for this element.*/

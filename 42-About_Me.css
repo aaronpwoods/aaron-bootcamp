@@ -2,13 +2,42 @@
         selector {
         property: value;
         }     */
-        
+
+/* General stuff regarding backgrounds: 
+        if you don't want the image to be tiled, use the background-repeat propety
+        if you want to adjust size of the background, use the backgound-size property */
+
+/* General properties of borders are: 
+        width (in pixels)
+        color (rgb or hex)
+        style (solid, dashed)
+         */
+/* You can define one-off styles by defining an ID SELECTOR in the CSS and then
+referencing it using the id attribute to element in the HTML: 
+CSS --> #id_name
+            {
+                property: value;
+            } */
+            
+/* You can define global styles by defining an CLASS SELECTOR in the CSS and then
+referencing it using the class attribute to element in the HTML: 
+CSS --> .class_name
+            {
+                property: value;
+            } */
+
 h1 {
     color: red;
 }
 li{
-    color: green;
+    color: rgb(4, 41, 255);
 }
 h4 {
     color: purple;
+    background: #4e73ff;
+}
+body {
+    background-image: url(./images/caspar-camille-rubin-89xuP-XmyrA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
