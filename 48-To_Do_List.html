@@ -4,30 +4,36 @@
     <meta charset="UTF-8">
     <title>Aaron's To-Do List</title>
     <link rel="stylesheet" type="text/css" href="48-To_Do_List.css">
+    <!-- You can also specify styles in the html using style tags inside the head element. -->
+    <style type="text/css">
+        p{
+            color: red;
+        }
+    </style>
 </head>
 <body>
     <h1 class="highlight">Aaron's To-Do List</h1>
     <form>
         <div>
             <label id="strike" for="walk">
-                <input type="checkbox" id="walk" name="walk">Walk Rusty
+                <input type="checkbox" id="walk" name="walk" value="done">Walk Rusty
             </label>
         </div>
 
         <div>
             <label class="highlight" for="buy">
-                <input type="checkbox" id="buy" name="buy">Buy Groceries
+                <input type="checkbox" id="buy" name="buy" value="done">Buy Groceries
             </label>
         </div>
 
         <div>
             <label class="highlight" for="finish">
-                <input type="checkbox" id="finish" name="finish"> Finish Video Recordings 
+                <input type="checkbox" id="finish" name="finish" value="done"> Finish Video Recordings 
             </label>
         </div>
-
-        </br>
-
+        <p>Here's an exmaple of paragraph text that is being styled according to 
+            a style tag in the head of the HTML that makes it red.
+        </p>
         <button>
             Submit
         </button>
