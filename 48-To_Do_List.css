@@ -42,7 +42,7 @@ label{
 }
 /* Example of how to define a style for all divs */
 div{
-    background-color: white;
+    background-color: #4373ff;
 }
 body{
     background-color: coral;
@@ -65,3 +65,20 @@ the class will override anything that I put in the class definition. This is
 why the border radius of 200px is still applied to the h1 headings even when I
 use the .highlight class. Because the highlight class does not specify anything
 for border radius it will use whatever was defined last for this element.*/
+
+/* Here's a summary of the different selector types: */
+
+/* Element */
+li{
+
+}
+
+/* id */
+#name {
+
+}
+
+/* class */
+.hello{
+    
+}
