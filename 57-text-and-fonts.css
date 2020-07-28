@@ -1,0 +1,53 @@
+/* font-family - controls what fonts are being used. To use Google fonts, first you need to 
+link the font in the <head> element of the HTML. Use this using a <link> element with href = "google font link"
+Once this is done you can then reference the style in the css as shown below:*/
+p{
+    font-family: 'Indie Flower', cursive;
+}
+
+h1{
+    font-family: 'Ralewway', sans-serif;
+}
+
+/* font-size - Can use pixels or can use "em". Using "em" makes your font
+a relative size. You can target some text and give it a value that's relative 
+to the text around it.*/
+body{
+    font-size: 14px;
+}
+
+h1{
+    font-size: 5.0em;
+}
+
+p{
+    font-size: 2.0em;
+}
+
+span{
+    font-size: 2.0em;
+}
+
+/* font-weight */
+p{
+    font-weight: bold;
+}
+
+/* line-height */
+p{
+    line-height: 1.5;
+}
+
+/* text-align - controls how the text is align: left, right, center */
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+/* text-decoration - controls if the text is underlined or strike-through */
+p{ 
+    text-decoration: underline;
+}

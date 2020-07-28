@@ -1,0 +1,25 @@
+p{
+
+/* Content - Width and Heights. Note that when using % for value of a property that the 
+percentage is based off of the parent element. In this case 50% would be 50% of the body element
+since <body> is the parent of <p>. % is great because its relative and will be responsive vs. 
+specifying a number of px which is absolute.*/
+width: 50%;
+
+/* Border */
+border: 2px solid blue;
+border-radius: 8px;
+
+/* Padding - If you just specify "padding: ##px" this will add equal padding on top, bottom, left
+and right. If you want separate values for each, you have to specify using padding-left for example.*/
+padding:    20px;
+
+/* Margin - do specify different margins for top/right/bottom/left you can do on one line*/
+margin: 50px 10px 50px 10px;
+
+/* Can also specify just two values and it will apply first value to top & bottom and the second 
+value to the left and right -- i.e. margin: 50px 10px */
+
+/* Use auto to allow the margin to be applied based on what's available in the browser window. 
+This results essentially in centering the content -- i.e. margin: 50px auto 50px auto (centers the content horizontally) */
+}
