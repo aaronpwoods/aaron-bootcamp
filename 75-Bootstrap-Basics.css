@@ -1,0 +1,36 @@
+/* You can override primary styles by selecting the
+bootstrap class and specifying your own values for 
+various properties. Example shown below for the danger button */
+
+
+/* body{
+    background: #f5f5f5;
+} */
+
+.btn-danger{
+    background: orange;
+}
+
+.container{
+    margin-top: 25px;
+}
+.navbar-brand{
+    padding: 0;
+}
+.brand-logo{
+    width: 50px;
+    margin-left: 10px;
+}
+
+/* .navbar{
+    border: none;
+    background: #f5f5f5;
+}
+ */
+ 
+.nav{
+    padding-left: 20px;
+}
+.navbar-nav{
+    font-size: 12px;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Basics</title>
+    <!-- Self-hosted bootstrap css file -->
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" type= "text/css" href="75-Bootstrap-Basics.css">
+    <!-- Linking bootstrap using a file that's hosted by bootstrap via CDN:-->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"></head> -->
+    
+    <body>
+    <!-- Linking the Jquery and Bootstrap JavaScript files -->
+        <!-- Jquery -->
+        <script
+            src="http://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous">
+        </script>
+        <!-- Bootstrap JavaScript -->
+            <script 
+                src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+                crossorigin="anonymous">
+            </script>
+
+  
+  <!-- Aaron's - Navigation bar "Nav Bar" -->
+    <div>
+        <nav class="navbar  navbar-default">
+            <div class="container-fluid">
+                <!-- Navbar header -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="#">
+                        <img class="brand-logo" src="./images/podpal-submark-3x.png" alt="Brand"> 
+                    </a>
+                </div>
+
+                <!-- Collapse div to denote what items you want to hide at smaller viewport sizes -->
+                <div class="collapse navbar-collapse" id="bs-nav-demo">
+
+                    <!-- Navigation links on left side -->
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Stories</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+
+                    <!-- Navigation links on right side -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Sign In</a></li>
+                        <li><a href="#">Get Started</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+<!-- Jumbo tron, button, and input basics for Bootstrap -->
+
+<div class="container">
+
+    <!-- Example of a jumbotron bootstrap component that has been placed
+    inside a container to modify its width from extending full width of browser. -->
+    <div class="jumbotron">
+        <h1>Hello World!</h1>
+        <p>In 1985 Aldus Corporation launched its first desktop publishing program Aldus PageMaker for Apple Macintosh computers, released in 1987 for PCs running Windows 1.0. Both contained the variant lorem ipsum most common today. Laura Perry, then art director with Aldus, modified prior versions of Lorem Ipsum text from typographical specimens; in the 1960s and 1970s it appeared often in lettering catalogs by Letraset. Anecdotal evidence has it that Letraset used Lorem ipsum already from 1970 onwards, eg. for grids (page layouts) for ad agencies. Many early desktop publishing programs, eg. Adobe PageMaker, used it to create template.</p>
+        <button class="btn btn-default">Sign Up</button>
+    </div>
+
+    <!-- Basic bootstrap buttons and examples of modifications based on class. -->
+    <div>
+        <h1>Bootstrap Basics</h1>
+        <button class="btn btn-danger btn-xs">Click Me!</button>
+        <button class="btn btn-success btn-xs active">Click Me!</button>
+        <button class="btn btn-success btn-xs" disabled="disabled">Click Me!</button>
+
+        <a href="http://www.getbootstrap.com" class="btn btn-info btn-lg">Get Bootstrap</a>
+    </div>
+
+    <!-- Basic bootstrap form exampl. Form-group and form-control really help to control the spacing and 
+    styling of the input fields, labels, etc. -->
+
+    <div>
+        <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputFile">File input</label>
+              <input type="file" id="exampleInputFile">
+              <p class="help-block">Example block-level help text here.</p>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Check me out
+              </label>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+    </div>
+    
+    <br><br>
+
+    <!-- Inline form example -->
+    <div>
+        <form class="form-inline">
+            <div class="form-group">
+              <label for="exampleInputName2">Name</label>
+              <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail2">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+            </div>
+            <button type="submit" class="btn btn-default">Send invitation</button>
+          </form>
+    </div>
+</div>
+
+</body>
+</html>
