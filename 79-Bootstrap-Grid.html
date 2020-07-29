@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Grid System</title>
+
+    <!-- Linking bootstrap using a file that's hosted by bootstrap via CDN: -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"></head>
+
+    <!-- Defining styles so we can see the column grids more easily -->
+    <style type="text/css">
+    .blue{
+        background: lightblue;
+        border: 1px solid blue;
+    }
+
+    .pink{
+        background: lightcoral;
+        border: 1px solid red;
+    }
+
+    .green{
+        background: lightgreen;
+        border: 1px solid green;
+    }
+    </style>
+
+</head>
+<body>
+
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+            <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+            <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+            <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+            <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+            <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+            <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+            <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+            <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+            <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+            <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+            <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+        </div>
+    </div> -->
+
+    <!-- Applying a lower grid class (i.e. medium) to an element will not only impact styling on 
+    medium devices but also large devices if a large grid class has not been specified. See example 
+    below: -->
+    <div class="container">
+        <div class="row">
+            <!-- Inside of the first row is an example of a nested row. -->
+            <div class="col-md-3 col-sm-6">
+                <div class="row">
+                    <div class="col-xs-6 pink">FIRST HALF</div>
+                    <div class="col-xs-6 pink">SECOND HALF</div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 green">TOUR DATE</div>
+            <div class="col-lg-3 col-md-3 col-sm-6 green">TOUR DATE</div>
+            <div class="col-lg-3 col-md-3 col-sm-6 green">
+                <div class="row">
+                    <div class="col-sm-2 pink">ONE</div>
+                    <div class="col-sm-2 pink">TWO</div>
+                    <div class="col-sm-2 pink">THREE</div>
+                    <div class="col-sm-2 pink">FOUR</div>
+                    <div class="col-sm-2 pink">FIVE</div>
+                    <div class="col-sm-2 pink">SIX</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 blue">COL LG 2</div>
+            <div class="col-lg-8 blue">COL LG 8</div>
+            <div class="col-lg-2 blue">COL LG 2</div>
+        </div>
+    </div>
+
+
+</body>
+</html>
